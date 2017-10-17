@@ -17,3 +17,8 @@ Capture>"Options...">[Uncheck "Use promiscuious mode on all interfaces"]>Start
 View>"Wireless Toolbar" then
 "Wireless Toolbar">"Decryption Keys..."
 
+# To view only traffic on the LAN
+"ip.src==10.0.0.0/8 and ip.dst==10.0.0.0/8"
+
+# To view traffic on a specific port
+"tcp.port eq 443"
