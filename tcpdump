@@ -3,10 +3,15 @@
 ###############
 # Basic Usage #
 ###############
+#Listing network interfaces on the system
+tcpdump -D
 
 #Capture packets on a particular interface (eth0)
 #Note that tcpdump (without the '-i eth0') is also valid if you are only using one interface
 tcpdump -i eth0
+
+#Write captured packets to file
+tcpdump -w <file>
 
 #Capture packets with more detailed output
 tcpdump -i eth0 -nnvvS
