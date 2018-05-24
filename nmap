@@ -34,6 +34,10 @@ No port range specified scans 1,000 most popular ports
 -oN Standard Nmap output
 -oX XML format
 
+#Report HTML it's necessary xsltproc 
+
+xsltproc scan.xml -o "`date +%m%d%y`_report.html
+
 #Timing Options
 
 -T0 Paranoid: Very slow, used for IDS evasion
