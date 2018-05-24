@@ -1,0 +1,15 @@
+
+#Basic usage
+wpscan --url <target> --verbose
+
+#Enumerate plugins, users, themes, timthumbs
+wpscan --url <target> --enumerate vp,u,vt,tt 
+
+#Use a HTTP proxy
+wpscan --url <target> --proxy IP:PORT
+
+#Use a SOCKS5 proxy (cURL >= v7.21.7 needed)
+wpscan --url <target> --proxy socks5://IP:PORT
+
+#Creates a log.txt file with WPScan's output if no filename is supplied.
+ wpscan --url <target> --log <file>
